@@ -1,6 +1,6 @@
 # Bachelor Thesis
 
-This repository contains various Python scripts developed for data analysis, visualization, and statistical modeling as part of my bachelor thesis.
+This repository contains various Python scripts developed for data analysis, visualization, and statistical modeling as part of my bachelor thesis. Additionally, the repository includes my completed thesis and presentation slides.
 
 ## Contents
 

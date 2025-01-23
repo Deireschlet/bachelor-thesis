@@ -28,7 +28,6 @@ def adf_test(timeseries):
     )
     for key, value in dftest[4].items():
         dfoutput["Critical Value (%s)" % key] = value
-    print(dfoutput)
     return dfoutput
 
 
@@ -137,7 +136,7 @@ def calculate_unit_roots(ar_coeffs):
 
 
 def plot_roots(unit_roots, padding=1):
-    plt.figure(figsize=(6, 6))
+    fig = plt.figure(figsize=(6, 6))
     circle = plt.Circle((0, 0), 1, color='blue', fill=False, linewidth=0.8, linestyle='--')
     ax = plt.gca()
     ax.add_artist(circle)
@@ -156,8 +155,7 @@ def plot_roots(unit_roots, padding=1):
     ax.set_xlim([xlim[0] - padding, xlim[1] + padding])
     ax.set_ylim([ylim[0] - padding, ylim[1] + padding])
     
-    plt.show()
-
+    return fig
 
 def main():
     print('Helper functions for time series analysis')
