@@ -1,10 +1,14 @@
+import os
 import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
 from statsmodels.tsa.arima_process import ArmaProcess
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from statsmodels.tsa.stattools import adfuller, kpss
+from statsmodels.tsa.stattools import adfuller
+
+def path_constructor(folder_path, file_name):
+    return os.path.join(folder_path, file_name)
 
 def randomwalk1D(n, start=0):
     xposition = [start]
