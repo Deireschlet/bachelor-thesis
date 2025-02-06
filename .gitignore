@@ -1,6 +1,4 @@
 .DS_Store
 venv
 .idea
-images/
 __pycache__/
-tex_tables/
